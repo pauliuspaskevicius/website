@@ -1,0 +1,17 @@
+.navbar-brand {
+  padding: 0px 15px;
+  background-color: black;
+}
+.navbar-brand > img {
+  height: 50px;
+}
+
+.jumbotron {
+  background-color: transparent;
+  background-image: url('http://exosphe.re/wp-content/uploads/2016/02/Header-1500x937.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: 0px -275px;
+  color: white;
+  text-shadow: 0px 0px 1px black;
+}
