@@ -6,7 +6,7 @@ var displayThumbnails = document.getElementById("display-thumbnails");
 
 var xhr = new XMLHttpRequest();
 xhr.addEventListener("load", onDataLoad);
-xhr.open("GET", "product-list.json");
+xhr.open("GET", "product-data.json");
 xhr.send();
 
 function onDataLoad (e) {
