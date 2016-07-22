@@ -4,6 +4,16 @@ var container = document.getElementById("product-list");
 var displayList = document.getElementById("display-list");
 var displayThumbnails = document.getElementById("display-thumbnails");
 
+var xhr = new XMLHttpRequest();
+xhr.addEventListener("load", onDataLoad);
+xhr.open("GET", "product-list.json");
+xhr.send();
+
+function onDataLoad (e) {
+  alert(e);
+  console.log(e);
+}
+
 var items = [];
 items.push({id: 1, name: "DC media blitz snowboard 150CM", price: 460, description: "Make sure to have the cameras rolling because the DC Media Blitz Snowboard is back for another season of mountainous destruction!", image: "product1.jpg"});
 items.push({id: 2, name: "DC tone snowboard 149CM", price: 620, description: "A stiff flex paired with a traditional camber profile and lightweight core provides an extra poppy and responsive platform for pro-level progression. ", image: "product2.jpg"});
