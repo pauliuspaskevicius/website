@@ -1,9 +1,9 @@
 var display = getQueryString("display");
 
-var container = document.getElementById("product-list");
-var search = document.getElementById("product-search");
-var displayList = document.getElementById("display-list");
-var displayThumbnails = document.getElementById("display-thumbnails");
+var containerElement = document.getElementById("product-list");
+var searchElement = document.getElementById("product-search");
+var displayListElement = document.getElementById("display-list");
+var displayThumbnailsElement = document.getElementById("display-thumbnails");
 
 var xhr = new XMLHttpRequest();
 xhr.addEventListener("load", onDataLoad);
@@ -28,16 +28,16 @@ function search (text) {
   render(results);
 }
 
-search.addEventListener("keyup", function (e) {
+searchElement.addEventListener("keyup", function (e) {
   search(e.target.value);
   console.log(e);
 });
 
-displayList.addEventListener("click", function () {
+displayListElement.addEventListener("click", function () {
   renderList (items);
 });
 
-displayThumbnails.addEventListener("click", function () {
+displayThumbnailsElement.addEventListener("click", function () {
   renderThumbnails (items);
 });
 
@@ -46,22 +46,22 @@ function render (list) {
 }
 
 function renderList (list) {
-  container.innerHTML = null;
-  container.className = "";
+  containerElement.innerHTML = null;
+  containerElement.className = "";
   for (var i=0; i<list.length; i++) {
     var item = document.createElement("li");
     var a = document.createElement("a");
     a.href = "product.html?id=" + list[i].id;
-    a.innerText = list[i].name;
+    a.innerText = list[i].§name;
     item.appendChild(a);
-    container.appendChild(item);
+    containerElement.appendChild(item);
   }
 }
 
 function renderThumbnails (list) {
-  container.innerHTML = null;
-  container.className = "products-thumbnail";
-  container.innerHTML = null;
+  containerElement.innerHTML = null;
+  containerElement.className = "products-thumbnail";
+  containerElement.innerHTML = null;
   for (var i=0; i<list.length; i++) {
     var item = document.createElement("li");
     var a = document.createElement("a");
@@ -73,7 +73,7 @@ function renderThumbnails (list) {
     a.appendChild(img);
     a.appendChild(span);
     item.appendChild(a);
-    container.appendChild(item);
+    containerElement.appendChild(item);
   }
 }
 
