@@ -14,9 +14,7 @@ var items = [];
 function onDataLoad (e) {
   if (e.target.status == 200) {
     items = JSON.parse(e.target.response);
-
-    // Set product display (default: thumbnails)
-    display == "list" ? renderList() : renderThumbnails();
+    render(items);
   }
 }
 
