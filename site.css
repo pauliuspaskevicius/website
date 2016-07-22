@@ -54,6 +54,12 @@ h1.title {
   font-size: 50px;
 }
 
+@media only screen and (max-device-width: 800px) {
+  .input-group.actions.search {
+    width: 100%;
+  }
+}
+
 ul.products-thumbnail li {
   position: relative;
   float: left;
