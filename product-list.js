@@ -52,7 +52,7 @@ function renderList (list) {
     var item = document.createElement("li");
     var a = document.createElement("a");
     a.href = "product.html?id=" + list[i].id;
-    a.innerText = list[i].§name;
+    a.innerText = list[i].name;
     item.appendChild(a);
     containerElement.appendChild(item);
   }
