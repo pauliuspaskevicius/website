@@ -56,7 +56,21 @@ h1.title {
 
 @media only screen and (max-device-width: 800px) {
   .input-group.actions.search {
+    padding-bottom: 30px;
     width: 100%;
+  }
+  .jumbotron {
+    padding-top: 10px;
+    padding-bottom: 0px;
+  }
+  .jumbotron h1 {
+    font-size: 20px;
+  }
+  .jumbotron p {
+    font-size: 12px;
+  }
+  footer {
+    padding-top: 30px;
   }
 }
 
