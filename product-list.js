@@ -21,7 +21,8 @@ function onDataLoad (e) {
 function search (text) {
   var results = [];
   for (var i=0; i<items.length; i++) {
-    if (items[i].name == text) {
+    if (items[i].name.toLowerCase().indexOf(text.toLowerCase()) >= 0
+    || items[i].price == text) {
       results.push(items[i]);
     }
   }
