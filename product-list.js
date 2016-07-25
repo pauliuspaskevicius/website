@@ -52,10 +52,9 @@ function search (text) {
   render(results);
 }
 
-searchElement.addEventListener("keyup", function (e) {
-  search(e.target.value);
-  console.log(e);
-});
+$("#product-search").on("keyup", function (e) {
+  search($(this).val());
+})
 
 displayListElement.addEventListener("click", function () {
   renderList (items);
