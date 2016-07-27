@@ -7,7 +7,7 @@ $(document).ready (function(){
     ga('send', 'event', 'users', 'subscribe', 'landing-page', '2');
   });
 
-  $("#call-us").on("click", function (){
+  $("#call-us").on("mousedown", function (){
     ga('send', 'event', 'users', 'call', 'landing-page', '+37061496643');
   });
 });
