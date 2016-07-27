@@ -17,6 +17,7 @@
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
       })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
       ga('create', 'UA-81332783-1', 'auto');
       ga('send', 'pageview');
     </script>
@@ -65,7 +66,7 @@
       <div id="slider" class="jumbotron">
         <h1>Hello, world!</h1>
         <p>This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-        <p><a class="btn btn-primary btn-lg" href="#" role="button" data-toggle="modal" data-target="#subscribe">Learn more</a></p>
+        <p><a id="subscribe-step-1" class="btn btn-primary btn-lg" href="#" role="button" data-toggle="modal" data-target="#subscribe">Learn more</a></p>
       </div>
     </div>
 
@@ -98,12 +99,13 @@
             </form>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-primary" data-dismiss="modal">Subscribe</button>
+            <button id="subscribe-step-2" type="button" class="btn btn-primary" data-dismiss="modal">Subscribe</button>
           </div>
         </div>
       </div>
     </div>
 
+    <script src="ga.js"></script>
     <script src="slider.js"></script>
 
   </body>
